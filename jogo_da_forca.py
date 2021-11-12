@@ -2,6 +2,7 @@ import unicodedata
 from random import randint
 
 
+
 def removedor_de_acentos(palavra: str) -> str:
     normalized = unicodedata.normalize('NFD', palavra)
     return normalized.encode('ascii', 'ignore').decode('utf8')
